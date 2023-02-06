@@ -20,7 +20,7 @@ const _GET_CSV_FROM_FTP_USING_ASYNC = async (credentails, server_ip, file_path) 
                 .on('end', () => { // Calls after finishing all rows fetch
                     resolve(csvArray)
                     ftp.end()
-                    console.log(`${server_ip} -> `, ftp.getConnectionStatus())
+                    // console.log(`${server_ip} -> `, ftp.getConnectionStatus())
                 })
                 .on('error', (err) => {
                     reject(err)
