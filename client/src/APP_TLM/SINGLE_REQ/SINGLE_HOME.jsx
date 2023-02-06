@@ -6,7 +6,7 @@ import ColorLegend from 'APP_TLM/Components/ColorLegend'
 
 const SINGLE_HOME = () => {
     const theme = useTheme()
-    const { data, isValidating, } = useSWR(`/tlm/single-req`, {
+    const { data, isValidating, } = useSWR(`/single-req`, {
         // refreshInterval: 600000, // 10 minute interval
         refreshInterval: 300000 // 5 min interval
     })

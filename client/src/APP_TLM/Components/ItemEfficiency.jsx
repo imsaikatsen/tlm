@@ -1,5 +1,4 @@
 import { Box, Card, CircularProgress, Grid, Typography, useTheme } from '@mui/material'
-import useSWR from 'swr'
 
 const getColor = (efficiency, theme) => {
     if (!efficiency) return theme.palette.secondary.main

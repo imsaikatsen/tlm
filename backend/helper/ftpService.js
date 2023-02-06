@@ -6,7 +6,7 @@ const _GET_CSV_FROM_FTP_USING_ASYNC = async (credentails, server_ip, file_path) 
     try {
         await ftp.connect({ ...credentails, host: server_ip })
 
-        console.log(`${server_ip} -> `, ftp.getConnectionStatus())
+        // console.log(`${server_ip} -> `, ftp.getConnectionStatus())
 
         const streamFile = await ftp.get(file_path)
 
@@ -29,8 +29,8 @@ const _GET_CSV_FROM_FTP_USING_ASYNC = async (credentails, server_ip, file_path) 
         })
     } catch (error) {
         ftp.end() // Connection error or any kind of error
-        console.log(`${server_ip} SERVER ERROR ->`, error)
-        console.log(`${server_ip} -> `, ftp.getConnectionStatus())
+        // console.log(`${server_ip} SERVER ERROR ->`, error)
+        // console.log(`${server_ip} -> `, ftp.getConnectionStatus())
     }
 }
 

@@ -1,6 +1,6 @@
 import axios from 'axios'
-// const BASE_URL = process.env.REACT_APP_ENV === 'PRODUCTION' ? 'http://192.168.121.175:3000/api/v02/' : 'http://localhost:3000'
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = process.env.REACT_APP_ENV === 'PRODUCTION' ? 'http://192.168.121.175:3000/api/v02/' : 'http://localhost:3000'
+// const BASE_URL = 'http://localhost:3000'
 
 /** ========PUBLIC INSTANCE======*/
 export const axiosInstance = axios.create({

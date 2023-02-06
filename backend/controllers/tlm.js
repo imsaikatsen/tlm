@@ -61,7 +61,6 @@ exports.SINGLE_REQUEST = async (req, res) => {
                 let machineData = null;
                 if (server.ip) {
                     machineData = await _GET_CSV_FROM_FTP_USING_ASYNC(credentails, server.ip, file.file_path)
-                    console.log(machineData);
                 }
                 const formatedData = machineData?.map(item => {
                     return {
