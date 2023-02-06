@@ -50,7 +50,7 @@ exports.SINGLE_REQUEST = async (req, res) => {
         let machineList = []
         const serverIP = []
 
-        for (let i = 0; i < 1; i++) {
+        for (let i = 0; i < 64; i++) {
             serverIP.push(
                 { ip: `172.16.1.${i}`, machine_no: i + 1 }
             )
